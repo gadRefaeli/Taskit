@@ -1,0 +1,96 @@
+// Font Sizes
+.fs12 { font-size: rem(12px); }
+.fs14 { font-size: rem(14px); }
+.fs18 { font-size: rem(18px); }
+.fs20 { font-size: rem(20px); }
+.fs24 { font-size: rem(24px); }
+.fs28 { font-size: rem(28px); }
+.fs30 { font-size: rem(30px); }
+
+// flex helpers
+
+.flex {
+
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.space-between {
+        justify-content: space-between;
+    }
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+
+.green {
+    background-color: #61BD4F;
+}
+
+.yellow {
+    background-color: #F2D600;
+}
+
+.orange {
+    background-color: #FF9F1A;
+}
+
+.red {
+    background-color: #EB5A46;
+}
+
+.purple {
+    background-color: #C377E0;
+}
+
+.blue {
+    background-color: #0079BF;
+}
+
+.aqua {
+    background-color: #00b6e4;
+}
+
+.lightgreen {
+    background-color: #00e9af;
+}
+
+.pink {
+    background-color: #fb6fdd;
+}
+
+.deepblue {
+    background-color: #030f75;
+}
+
+.gray {
+    display: none;
+}
+
+.grayColor {
+    background-color: rgb(193, 190, 206);
+}
+
+// Media helpers
+
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
+.video-ratio {
+    @include aspect-ratio(16, 9);
+}
+.portrait-ratio {
+    @include aspect-ratio(9, 16);
+}

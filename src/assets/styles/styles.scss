@@ -1,0 +1,44 @@
+// Setup
+@import "setup/variables.scss";
+// @import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basics/helpers.scss";
+// @import "basics/layout.scss";
+ @import "basics/base.scss";
+// @import "basics/buttons.scss";
+
+
+//Pages
+@import "views/Home.scss";
+@import "views/Dashboard.scss";
+@import "views/Board.scss";
+
+// Components
+// @import "components/main-header.scss";
+@import "components/Header.scss";
+@import "components/BoardNav.scss";
+@import "components/GroupPreview.scss";
+@import "components/Card.scss";
+// @import "components/CardDetailsTemp.scss";
+@import "components/CardDetails.scss";
+@import "components/CardMemberList.scss";
+@import "components/GroupAdd.scss";
+@import "components/CardMember.scss";
+@import "components/CardLableList.scss";
+@import "components/CardLable.scss";
+@import "components/CardAddCheckList.scss";
+@import "components/Boards.scss";
+@import "components/BoardAdd.scss";
+@import "components/CardCheckList.scss";
+@import "components/UploadPreview.scss";
+@import "components/AttachmentsList.scss";
+@import "components/CardDetailsDate.scss";
+@import "components/CardComment.scss";
+@import "components/ActivityList.scss";
+@import "components/CardCoverList.scss";
+@import "components/Footer.scss";
+@import "components/DashboardAnalisys.scss";
+

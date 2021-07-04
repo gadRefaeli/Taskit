@@ -1,0 +1,608 @@
+$base-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue";
+.edit-body {
+  display: flex;
+  @include for-wide-layout {
+    flex-direction: row;
+  }
+  @include for-mobile-layout {
+    flex-direction: column;
+  }
+}
+.edit-details {
+  flex-grow: 40;
+  padding-right: 10px;
+ 
+}
+
+.user-img-chat-add {
+  width: 35px;
+  height: 35px;
+  background-color: RGB(222, 225, 233);
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $base-font;
+  font-weight: 600;
+  color: #42516e;
+}
+
+.card-details-members-open {
+  &::after {
+    font-family: icomoon;
+    content: "\e901";
+    margin-right: 5px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: RGB(235, 235, 235);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #42516e;
+    display: flex;
+  }
+  &:hover {
+    &::after {
+      background-color: RGB(222, 225, 233);
+    }
+  }
+}
+
+.card-details-labels-open {
+  &::after {
+    font-family: icomoon;
+    content: "\e901";
+    margin-right: 5px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: RGB(235, 235, 235);
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #42516e;
+    display: flex;
+  }
+  &:hover {
+    &::after {
+      background-color: RGB(222, 225, 233);
+    }
+  }
+}
+
+.edit {
+  background-color: #f4f5f7;
+  @include for-wide-layout {
+    width: 750px;
+  }
+  @include for-mobile-layout {
+    width: 95vw;
+    overflow: hidden;
+  }
+  border-radius: 5px;
+  margin-top: 0;
+  height: auto;
+  position: relative;
+  border-radius: 5px;
+  
+  .edit-contaner {
+    padding: 10px 20px;
+  }
+
+  .edit-details-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .list-pages {
+    font-family: $base-font;
+    font-size: 14px;
+    margin-left: 25px;
+    color: #7c838e;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    height: 22px;
+    width: 22px;
+  }
+  .edit-details-header-logo:before {
+    font-family: icomoon;
+    content: "\e911";
+    font-size: 22px;
+    color: #42516e;
+  }
+  .close-save-edit {
+    &:before {
+      // background-color: rgba(0,0,0,.16);
+      padding: 10px;
+      border-radius: 50%;
+      top: 5px;
+      right: 5px;
+      font-family: icomoon;
+      content: "\e91b";
+      font-size: 22px;
+      color: #42526e;
+      position: absolute;
+    }
+    &:hover:before {
+      transition: 0.4;
+      background-color: rgb(230, 230, 230);
+    }
+  }
+  .close-save-edit-top {
+    &:before {
+      font-family: icomoon;
+      content: "\e91b";
+      font-size: 20px;
+      padding: 10px;
+    }
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 32px;
+    overflow: hidden;
+    padding: 4px;
+    margin: 4px;
+    width: 32px;
+    z-index: 2;
+    background-color: hsla(0, 0%, 100%, 0.24);
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.32);
+      color: #fff;
+    }
+  }
+  
+  
+  .close-save-edit-top-cover {
+    &:before {
+      font-family: icomoon;
+      content: "\e91b";
+      font-size: 20px;
+    }
+    
+    background-color: rgba(0,0,0,.08);
+    color: #42526e;
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 32px;
+    overflow: hidden;
+    padding: 4px;
+    margin: 4px;
+    width: 32px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover {
+      background-color: rgba(0,0,0,.16);
+      color: #42526e;
+    }
+  }
+  
+  
+  
+
+
+
+
+
+
+  
+  .edit-details-description-logo:before {
+    font-family: icomoon;
+    content: "\e921";
+    font-size: 22px;
+    color: #42516e;
+  }
+  .edit-details-activity-logo:before {
+    font-family: icomoon;
+    content: "\e900";
+    font-size: 22px;
+    color: #42516e;
+  }
+  .edit-details-activity-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+  
+    span {
+      
+      display: flex;
+      align-items: center;
+    }
+    h1 {
+      
+      display: inline-block;
+      width: auto;
+      margin: 0;
+      min-height: 18px;
+      min-width: 40px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #172b4d;
+      padding-left: 10px;
+    }
+    button {
+      background-color: rgba(9, 30, 66, 0.04);
+      box-shadow: none;
+      text-align: center;
+      cursor: pointer;
+      color: #172b4d;
+      -webkit-appearance: none;
+      border-radius: 3px;
+      border: none;
+      font-weight: 400;
+      padding: 2px 6px;
+      width: 100px;
+      font: $base-font;
+      &:hover {
+        transition: 0.4;
+        background-color: rgb(230, 230, 230);
+      }
+    }
+  }
+  .edit-details-description {
+    .edit-details-description-btns {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .save-btn {
+        width: 80px;
+        height: 30px;
+        background-color: #0079bf;
+        box-shadow: none;
+        border: none;
+        color: #fff;
+        border-radius: 3px;
+        padding: 3px 8px;
+        text-decoration: none;
+        resize: none;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+          "Fira Sans", "Droid Sans", "Helvetica Neue";
+      }
+    }
+
+    textarea {
+      background-color: rgba(9, 30, 66, 0.04);
+      box-shadow: none;
+      border: none;
+      border-radius: 3px;
+      display: block;
+      min-height: 40px;
+      padding: 8px 12px;
+      text-decoration: none;
+      resize: none;
+      margin-bottom: 20px;
+      font-family: $base-font;
+      width: 98%;
+      &:focus {
+        min-height: 108px;
+        background: #fff;
+        background-color: #fff;
+        box-shadow: inset 0 0 0 2px #0079bf;
+        outline: none;
+      }
+    }
+    .edit-details-description-header {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      h1 {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        min-height: 18px;
+        min-width: 40px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #172b4d;
+        padding-left: 10px;
+      }
+    }
+  }
+  button {
+    border: none;
+    background-color: #f4f5f7;
+    height: 40px;
+    font-family: $base-font;
+    font-size: 14px;
+    color: #172b4d;
+  }
+  .edit-details-header-logo:before {
+    font-family: icomoon;
+    content: "\e911";
+    font-size: 22px;
+    color: #42516e;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+  }
+  .edit-details-header-logo:hover {
+    background-color: rgba(9, 30, 66, 0.08);
+
+    border-radius: 50%;
+    border: none;
+  }
+}
+
+
+
+.edit-details-textarea-header {
+  background: transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 16px;
+  font-weight: 600;
+  resize: none;
+  outline: none;
+  border: none;
+  width: 85%;
+  padding-left: 5px;
+  display: flex;
+  align-content: flex-end;
+  color: #42516e;
+  font-family: $base-font;
+  min-height: 20px;
+  height: 35px;
+}
+
+.edit-details-textarea-header:focus {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #0079bf;
+  height: 35px;
+}
+
+.edit-details-textarea-header:before {
+  font-family: icomoon;
+  content: "\e93a";
+}
+.edit-activity-description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  .user-img-chat-add {
+    width: 35px;
+    height: 35px;
+    background-color: RGB(222, 225, 233);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $base-font;
+    font-weight: 600;
+    color: #42516e;
+  }
+  textarea {
+    background-color: rgba(9, 30, 66, 0.04);
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    min-height: 40px;
+    padding: 8px 12px;
+    text-decoration: none;
+    width: 93%;
+    resize: none;
+    margin-bottom: 20px;
+    font-family: $base-font;
+  }
+}
+
+.edit-add-to-card {
+  display: flex;
+  @include for-wide-layout {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  @include for-mobile-layout {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  button {
+    background-color: rgba(9, 30, 66, 0.04);
+    box-shadow: none;
+    text-align: start;
+    cursor: pointer;
+    color: #42526e;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border: none;
+    font-weight: 400;
+    padding: 2px 6px;
+    height: 32px;
+    font: $base-font;
+    margin-top: 10px;
+    width: 158px;
+    @include for-mobile-layout {
+      width: 170px;
+    }
+    &.menu-btn:hover {
+      transition: 0.4;
+      background-color: rgb(230, 230, 230);
+    }
+  }
+
+  .edit-add-to-card-members:before {
+    font-family: icomoon;
+    content: "\e945";
+    font-size: 16px;
+  }
+
+  .card-modal-pos {
+    position: relative;
+  }
+
+  .edit-add-to-card-labels:before {
+    font-family: icomoon;
+    content: "\e93e";
+    font-size: 16px;
+  }
+
+  .edit-add-to-card-checklist:before {
+    font-family: icomoon;
+    content: "\e917";
+    font-size: 16px;
+  }
+
+
+  .edit-add-to-card-members:before {
+    font-family: icomoon;
+    content: "\e945";
+    font-size: 16px;
+  }
+
+  .edit-add-to-card-labels:before {
+    font-family: icomoon;
+    content: "\e93e";
+    font-size: 16px;
+  }
+
+  .edit-add-to-card-checklist:before {
+    font-family: icomoon;
+    content: "\e917";
+    font-size: 16px;
+  }
+
+  .edit-add-to-card-dates:before {
+    font-family: icomoon;
+    content: "\e91a";
+    font-size: 16px;
+  }
+
+  .edit-add-to-card-attachment:before {
+    font-family: icomoon;
+    content: "\e908";
+    font-size: 16px;
+  }
+
+  .edit-add-to-card-cover:before {
+    font-family: icomoon;
+    content: "\e913";
+    font-size: 16px;
+  }
+  h1 {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    min-height: 18px;
+    min-width: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #42526e;
+  }
+}
+
+.card-details-members {
+  h1 {
+    color: #5e6c84;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .user-img-chat-add {
+    margin-right: 3px;
+  }
+}
+
+.card-details-labels {
+  h1 {
+    color: #5e6c84;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .user-img-chat-add {
+    margin-right: 3px;
+  }
+}
+.members-labels-container {
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 25px;
+
+}
+
+.card-preview-cover-img-details {
+  background-color: rgb(27, 40, 53);
+  height: 160px;
+  min-height: 160px;
+  width: 100%;
+}
+
+.card-preview-cover,
+.card-details-cover {
+  width: 100%;
+  background-size: initial;
+  background-origin: content-box;
+  padding: 0px;
+  box-sizing: border-box;
+  background-position: left center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.card-preview-cover {
+  height: 32px;
+}
+
+.card-details-cover {
+  height: 116px;
+  min-height: 116px;
+}
+
+.edit-add-to-card-btn-continer{
+display: flex;
+@include for-wide-layout {
+  flex-direction: column;
+}
+@include for-mobile-layout {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+ justify-content: space-between;
+ 
+}
+
+}
+
+.adit-details-description-textarea-continer{
+
+margin-left: 30px;
+
+}

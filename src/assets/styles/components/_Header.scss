@@ -1,0 +1,123 @@
+.home:before {
+  font-family: icomoon;
+  content: "\e938";
+}
+.more-apps:before {
+  font-family: icomoon;
+  content: "\e906";
+ 
+}
+.about{
+&:before {
+  font-family: icomoon;
+  content: "\e93a";
+}
+}
+.boards:before {
+  font-family: icomoon;
+  content: "\e90a";
+  margin-right: 4px;
+}
+.create-board:before {
+  font-family: icomoon;
+  content: "\e901";
+}
+.notifications:before {
+  font-family: icomoon;
+  content: "\e94b";
+}
+.user-img {
+  min-width: 32px;
+  height: 32px;
+  background-color: #dfe1e6;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 0;
+  margin-left: 3px;
+}
+
+.main-nav-btn {
+  border-radius: 3px;
+  border: 0;
+  text-decoration: none;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+  color: #ffffff;
+  display: flex;
+  width: 32px;
+  font-weight: 100;
+  height: 32px;
+  margin: 0 4px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 20px;
+  margin: 0 2px;
+  span {
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+.main-header {
+  nav {
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+   justify-content: space-between;
+    max-height: 40px;
+    padding: 4px 3px;
+    max-width: 100vw;
+    
+  }
+  .main-header-left, .main-header-right {
+    display: flex;
+    
+    .boards {
+      @include for-mobile-layout(){
+        width: 32px;
+      }
+      width: 83px;
+      color: white;
+      margin-right: 4px;
+      span{
+        @include for-mobile-layout(){
+          display: none;
+        }
+  
+      }
+    
+  
+    }
+  }
+}
+.main-header-right {
+justify-content: flex-end;
+}
+
+.logo {
+  background-image: url("./../../img/logo-taskit-.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 70px;
+  outline: none;
+  text-align: center;
+  opacity: 0.8;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  height:40px;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+

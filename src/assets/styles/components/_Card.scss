@@ -1,0 +1,300 @@
+.card-preview,
+.card-preview-drag-right,
+.card-preview-drag-left{
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfdff;
+  max-height: calc(100vh - 11.8rem);
+  border-radius: 3px;
+  margin-right: 1rem;
+  margin: 6px 8px 6px;
+  
+  cursor: pointer;
+  justify-content: center;
+  // box-shadow: 0 1px 0 rgb(204 ,209, 217);
+ box-shadow: 0 1px 0 rgba(9, 30, 66, 0.2);
+  // box-shadow: 0 1px 0 rgb(9, 30, 66 / 25%);
+  white-space: normal;
+  .card-preview-body{
+    padding: 6px 8px 2px;
+    position: relative;
+  }
+}
+
+.drag-flex {
+  display: flex;
+  flex-direction: column;
+}
+.card-preview-drag-right{
+  transform: scale(1.085) rotate(3.5deg);
+  transition: transform .12s;
+}
+.card-preview-drag-left{
+  transform: scale(1.085) rotate(-3.5deg);
+  transition: transform .12s;
+}
+  
+
+.card-add-edit {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #838c91;
+  text-align: left;
+  cursor: pointer;
+  padding: 2px 2px;
+  form{
+    padding: 0px 5px;
+  }
+  textarea {
+    outline: none;
+    border: none;
+    border: 0;
+    background-color: #fafbfc;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+    padding: 6px 8px 2px;
+    border: none;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: flex-start;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue";
+    box-shadow: 0 0.5px 0 rgb(9, 30, 66 / 25%);
+  }
+  .card-add-menu-btn:before {
+    font-family: icomoon;
+    content: "\e951";
+    font-size: 25px;
+    color: #69788d;
+  }
+
+  .card-add-txt {
+    color: #5e6c84;
+    font-size: 16px;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .card-add-txt:before {
+    font-family: icomoon;
+    content: "\e901";
+    margin-right: 5px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 10px;
+  }
+}
+.card-preview-remove-btn,
+.card-preview-edit-icon {
+  border: none;
+  background-color: #fafbfc;
+  display: flex;
+  padding: 5px 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: transparent;
+}
+.card-preview-remove-btn {
+  top: 2px;
+  right: 2px;
+}
+.card-preview-edit-icon {
+  top: 2px;
+  right: 25px;
+}
+
+.card-preview:hover {
+  .card-preview-remove-btn:before {
+    font-family: icomoon;
+    content: "\e971";
+    font-size: 20px;
+    color: #5e6c84;
+  }
+  .card-preview-remove-btn:hover {
+    background-color: rgba(211, 208, 208, 0.364);
+  }
+}
+
+.card-add-edit-btn {
+  background-color: #0079bf;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  height: 30px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue";
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.card-add-exit-btn {
+  border: none;
+  background-color: #e2e4e600;
+  cursor: pointer;
+}
+
+.card-add-exit-btn:before {
+  font-family: icomoon;
+  content: "\e91b";
+  font-size: 26px;
+  text-align: center;
+  color: #69788d;
+}
+
+.card-add-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+  .left-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.test-white-space {
+  width: 250px;
+  word-wrap: break-word;
+}
+
+.card-preview-members {
+  display: flex;
+ padding-top: 10px;
+  div {
+    width: 28px;
+    height: 28px;
+    background-color: RGB(222, 225, 233);
+    border-radius: 50%;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue";
+    font-weight: 700;
+    color: #42516e;
+    font-size: 12px;
+  }
+}
+
+.card-preview-date {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue";
+  font-size: 12px;
+  border-radius: 3px;
+  color: #fff;
+  padding: 3px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.not-checked {
+  background-color: #ec9488;
+}
+.checked {
+  background-color: #61bd50;
+}
+
+.card-preview-date-clock:before {
+  font-family: icomoon;
+  content: "\e91a";
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 2px;
+}
+.card-preview-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: flex-end;
+}
+.card-preview:hover {
+  .card-preview-edit-icon:before {
+    font-family: icomoon;
+    content: "\e927";
+    font-size: 20px;
+    color: #5e6c84;
+  }
+ 
+}
+.icon-desription:before {
+  font-family: icomoon;
+  content: "\e921";
+  font-size: 20px;
+  color: #5e6c84;
+}
+.card-preview-activities:before {
+  font-family: icomoon;
+  content: "\e91d";
+  font-size: 20px;
+  color: #5e6c84;
+}
+
+.card-attachment-icon:before {
+  font-family: icomoon;
+  content: "\e908";
+  font-size: 20px;
+  color: #5e6c84;
+}
+
+.card-checklist-icon:before {
+  font-family: icomoon;
+  content: "\e917";
+  font-size: 20px;
+  color: #5e6c84;
+ line-height: 23px;
+}
+
+.card-preview-activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+
+.card-preview-attachments-img {
+  width: 100%;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+
+.card-preview-bottom-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap:3px;
+  .card-checklist-preview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+      font-size: 14px;
+      margin-left: 2px;
+    }
+  }
+
+}
+

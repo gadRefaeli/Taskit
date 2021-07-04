@@ -1,0 +1,83 @@
+
+.home:before{
+ font-family: icomoon;
+  content: '\e938';
+}
+.more-apps:before{
+  font-family: icomoon;
+  content: '\e906';
+}
+.about:before{
+  font-family: icomoon;
+   content: '\e93a';
+ }
+ .boards:before{
+  font-family: icomoon;
+   content: '\e90a';
+ }
+ .create-board:before{
+  font-family: icomoon;
+   content: '\e901';
+ }
+ .notifications:before{
+  font-family: icomoon;
+   content: '\e94b';
+ }
+.user-img{
+width: 32px;
+height: 32px;
+background-color: #DFE1E6;
+border-radius: 100%;
+display:flex;
+align-items: center;
+justify-content: center;
+font-weight:bold;
+border:0;
+margin-left: 3px;
+}
+
+ .main-nav-btn{
+     border-radius: 3px;
+     border: 0;
+     text-decoration: none;
+     align-items: center;
+     background-color: rgba(255, 255, 255, 0.3);
+     box-shadow: none;
+     color: #FFFFFF;
+     display: flex;
+     width: 32px;
+    font-weight: 100;
+     line-height: 32px;
+     margin: 0 4px 0 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     font-size: 20px;
+     margin: 0 2px;
+     span{
+       margin-left: 2px;
+       font-weight: bold;
+       font-size: 15px;
+     }
+ }
+
+.main-header{
+  nav{
+    background-color: #026AA7;
+    box-sizing: border-box;
+    display: flex;
+    max-height: 40px;
+    padding: 4px;
+  }
+  .main-header-left{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-basis: 100%;
+    .boards{
+width:100px
+    }
+  }
+}

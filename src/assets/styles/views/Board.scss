@@ -1,0 +1,55 @@
+$nav-size: 20px;
+.board {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.window-screen {
+  background-color: rgba(0, 0, 0, 0.659);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  overflow-y: auto;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.borad-nav-color {
+  height: 40px;
+  width: 100vw;
+  // background-color:rgba(46, 45, 45, 0.5);
+  background-color: rgba(0, 0, 0, 0.32);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: -1;
+}
+
+.fade {
+  // height: calc(100vw/1920px*415px);
+  height: calc(40vh );
+  // height: 25vh;
+  width: 100vw;
+  // background: rgba(255, 255, 255, 0.556);
+  // background: linear-gradient(180deg, rgba(255, 255, 255, 0.522) 52%, rgba(255, 255, 255, 0) 100%);
+  // background-color:rgba(46, 45, 45, 0.5);
+  background-image: url("https://res.cloudinary.com/taskit-sprint/image/upload/v1622819528/pvttcooptsuyhunbol8o.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}

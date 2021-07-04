@@ -1,0 +1,86 @@
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 300px;
+
+  .activity-list-container{
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+min-height: 2px;
+flex-direction: column;
+margin-bottom: 5px;
+.activity-list-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #172b4d;
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+
+}
+  }
+
+}
+
+.activity-list-card{
+  display: flex;
+  flex-direction: row;
+  max-width: 468px;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  gap: 10px;
+  color: #172b4d; 
+}
+.activity-list-txt {
+  font-size: 0.8rem;
+  word-break: break-word
+}
+
+
+.activity-list-container-icon-txt{
+display: flex;
+flex-direction: row;
+align-items: center
+
+}
+.activity-title{
+  color: #172b4d;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 5px 0;
+    border-bottom: 2px solid #dfe3e8;
+  
+  &:before{
+    font-family: icomoon;
+        content: '\e900';
+        font-size: 18px;
+        margin: 0 10px;
+  }
+}
+.activity-list-name{
+  font-weight: 700;
+  margin-right: 6px;
+  font-size: 14px;
+}
+.activity-list-txt{
+  font-size: 0.8rem;
+  word-break:break-all;
+}
+.activity-list-time{
+  font-size: 0.8rem;
+  color: #5e6c84;
+}
+
+.activity-list-card-container{
+margin: 0px;
+
+}

@@ -1,0 +1,54 @@
+.card-preview-attachments-img-details{
+  @include aspect-ratio(1.25, 1);
+  width: 8em;
+  margin: 5px;
+  margin-left: 30px;
+ 
+
+}
+
+.edit-details-attachments{
+ 
+  .edit-details-attachments-header {
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    .edit-details-attachments-logo:before {
+      font-family: icomoon;
+      content: "\e908";
+      font-size: 22px;
+      color: #42516e;
+    }
+    h1 {
+      display: inline-block;
+      width: auto;
+      margin: 0;
+      min-height: 18px;
+      min-width: 40px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #172b4d;
+      padding-left: 10px;
+    }
+  }
+
+}
+
+.edit-details-header-logo:before {
+  font-family: icomoon;
+  content: "\e911";
+  font-size: 22px;
+  color: #42516e;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+}
+.edit-details-header-logo:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+
+  border-radius: 50%;
+  border: none;
+}

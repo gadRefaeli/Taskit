@@ -1,0 +1,103 @@
+.group-preview{
+  display: flex;
+  flex-direction: column;
+  // background-color: #e2e4e6;
+  background-color: #ebecf0;
+  @include for-wide-layout {
+  max-height: 87vh;
+  }
+  @include  for-mobile-layout {
+    max-height:75vh;
+    }
+  border-radius: 3px;
+  margin-right: 0.45rem;
+}
+
+.group-list-container {
+  overflow-x: auto;
+  @include for-wide-layout {
+  height: calc(100vh - 100px);
+  }
+  @include  for-mobile-layout {
+    height: 79vh;
+    }
+}
+
+.group-list{
+  display: flex;
+  align-items: start;
+  // padding: 0 0.8rem 0.8rem;
+  flex-basis: auto;
+  padding-left: 0.5rem;
+}
+
+.card-list-inner{
+  min-height: 1px;
+}
+
+
+.group-preview-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-end;
+  align-items: baseline;
+  padding-right: 7px;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 95%;
+  height:45px;
+}
+
+.card-list-and-add {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 282px;
+  // margin-right: 2px;
+  // margin-left: 2px;
+  z-index: 1;
+  min-height: 0;
+ 
+  margin-right: 5px;
+  margin-left: 7px;
+
+}
+
+
+.group-preview-header-btn{
+margin: 0;
+padding: 6px;
+border: none;
+background-color: #ebecf0;
+cursor: pointer;
+color: #69788d;
+&:before{
+  font-family: icomoon;
+  content: '\e951';
+  font-size: 17px;
+
+}
+}
+.card-title{
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  color: #333;
+  font-weight: 600;
+}
+
+
+
+.card-add-menu-btn{
+  height: 32px;
+  width: 32px;
+  border: none;
+  background-color: #e2e4e6;
+  cursor: pointer;
+
+}
+
+

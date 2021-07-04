@@ -1,0 +1,27 @@
+.main-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 /-1;
+
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.8) 10%,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(255, 255, 255, 1) 100%
+    );
+
+    .logo {
+        width: rem(330px);
+        transform: rotate(350deg);
+        mix-blend-mode: multiply;
+    }
+
+    p {
+        max-width: 44ch;
+        margin: 0 0 1em;
+    }
+}
